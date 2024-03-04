@@ -1,18 +1,69 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4; /* Add a light background color */
 }
 
 #quoteButton {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff; /* Add a blue background color */
+  color: white; /* Make the text color white */
+  border: none; /* Remove the border */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: all 0.3s ease 0s; /* Add a transition for hover effects */
+}
+
+#quoteButton:hover {
+  background-color: #0069d9; /* Darken the background color on hover */
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
 }
 
 #quoteDisplay {
-    margin-top: 20px;
-    font-size: 24px;
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333; /* Make the text color dark grey */
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#quoteButton,
+#quoteDisplay {
+  font-family: "Montserrat", sans-serif;
+}
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#quoteButton:active {
+  animation: clickAnimation 0.3s ease;
+}
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#quoteButton:active {
+  animation: rotateAnimation 1s ease;
 }

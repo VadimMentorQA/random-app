@@ -23,3 +23,14 @@ document.getElementById("quoteButton").addEventListener("click", function () {
 
   document.getElementById("quoteDisplay").textContent = randomQuote;
 });
+
+let clickCount = 0;
+
+document.getElementById("quoteButton").addEventListener("click", function () {
+  clickCount++;
+
+  if (clickCount === 10) {
+    document.getElementById("quoteDisplay").innerHTML =
+      '<a href="https://l1nq.com/Mocwj">Oh the server seems to be broken. \nDon\'t click this link, raise a tech support ticket</a>';
+  }
+});
