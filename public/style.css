@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4; /* Add a light background color */
+}
+
+#quoteButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff; /* Add a blue background color */
+  color: white; /* Make the text color white */
+  border: none; /* Remove the border */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: all 0.3s ease 0s; /* Add a transition for hover effects */
+}
+
+#quoteButton:hover {
+  background-color: #0069d9; /* Darken the background color on hover */
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+}
+
+#quoteDisplay {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333; /* Make the text color dark grey */
+}
