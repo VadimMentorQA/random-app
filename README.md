@@ -1,6 +1,6 @@
 # Clone the project
 
-git clone https://github.com/VadimMentorQA/random-app
+git clone https://github.com/VadimMentorQA/random-app.git
 
 # Navigate to the project directory
 
